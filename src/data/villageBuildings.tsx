@@ -1,0 +1,118 @@
+import { BuildingData } from "@/components/village/VillageBuilding";
+
+export const villageBuildings: BuildingData[] = [
+  {
+    id: "logiciels-libres",
+    name: "La Forge du Libre",
+    description: "Ici, on forge des outils numériques sans chaînes ! Les logiciels libres donnent le pouvoir aux utilisateurs de comprendre, modifier et partager leurs outils.",
+    icon: <span>🛠️</span>,
+    color: "bg-primary/80",
+    position: { x: 22, y: 0 },
+    size: "medium",
+    details: {
+      title: "Pourquoi les logiciels libres ?",
+      content: "Les logiciels libres garantissent la transparence, la sécurité et l'indépendance. Contrairement aux logiciels propriétaires, vous pouvez vérifier ce qu'ils font vraiment avec vos données.",
+      actions: [
+        "Installer LibreOffice à la place de Microsoft Office",
+        "Utiliser Firefox ou Brave comme navigateur",
+        "Découvrir GIMP pour l'édition d'images",
+        "Essayer Linux sur un vieil ordinateur",
+      ],
+    },
+  },
+  {
+    id: "stockage-local",
+    name: "Le Grenier des Données",
+    description: "Gardez vos données près de vous ! Ce grenier symbolise l'importance du stockage local et de la souveraineté numérique.",
+    icon: <span>🏛️</span>,
+    color: "bg-village-wood",
+    position: { x: 40, y: 0 },
+    size: "medium",
+    details: {
+      title: "Reprendre le contrôle de vos données",
+      content: "Stocker vos fichiers localement ou sur des serveurs que vous contrôlez évite la dépendance aux géants du cloud et protège votre vie privée.",
+      actions: [
+        "Sauvegarder régulièrement sur disque dur externe",
+        "Installer Nextcloud pour créer son propre cloud",
+        "Chiffrer les données sensibles",
+        "Éviter Google Drive pour les documents importants",
+      ],
+    },
+  },
+  {
+    id: "ecole",
+    name: "L'École du Village",
+    description: "L'autonomie pédagogique commence ici ! Apprenez à utiliser des outils numériques éthiques et à former les autres.",
+    icon: <span>📚</span>,
+    color: "bg-secondary",
+    position: { x: 80, y: 0 },
+    size: "medium",
+    details: {
+      title: "L'éducation au numérique responsable",
+      content: "Former les élèves, enseignants et familles aux enjeux du numérique permet de construire une société plus consciente et autonome.",
+      actions: [
+        "Organiser des ateliers sur la vie privée",
+        "Créer des tutoriels sur les alternatives libres",
+        "Intégrer les logiciels libres dans les cours",
+        "Sensibiliser aux fake news et manipulation",
+      ],
+    },
+  },
+  {
+    id: "place-village",
+    name: "La Place du Village",
+    description: "Le cœur battant de notre communauté ! C'est ici que se prennent les décisions ensemble et que s'échange le savoir.",
+    icon: <span>🎪</span>,
+    color: "bg-accent/80",
+    position: { x: 58, y: 0 },
+    size: "medium",
+    details: {
+      title: "La participation communautaire",
+      content: "Un numérique responsable se construit ensemble. La communauté partage, s'entraide et décide collectivement des outils à utiliser.",
+      actions: [
+        "Rejoindre un groupe local de promotion du libre",
+        "Participer à des install parties",
+        "Contribuer à des projets open source",
+        "Organiser des cafés numériques",
+      ],
+    },
+  },
+  {
+    id: "atelier-reparation",
+    name: "L'Atelier du Réparateur",
+    description: "Réparer plutôt que jeter ! Ici on prolonge la vie des appareils et on combat l'obsolescence programmée.",
+    icon: <span>🔧</span>,
+    color: "bg-village-stone",
+    position: { x: 32, y: 0 },
+    size: "medium",
+    details: {
+      title: "La sobriété numérique",
+      content: "Faire durer ses appareils, les réparer et les recycler correctement réduit l'impact environnemental du numérique.",
+      actions: [
+        "Réparer avant de remplacer",
+        "Acheter du matériel reconditionné",
+        "Installer des systèmes légers sur vieux PC",
+        "Recycler correctement les e-déchets",
+      ],
+    },
+  },
+  {
+    id: "tour-garde",
+    name: "La Tour de Garde",
+    description: "Vigilance et protection ! Cette tour veille sur la sécurité et la vie privée de tous les villageois numériques.",
+    icon: <span>🏰</span>,
+    color: "bg-village-roof",
+    position: { x: 70, y: 0 },
+    size: "medium",
+    details: {
+      title: "Sécurité et vie privée",
+      content: "Protéger ses données et sa vie privée est un droit fondamental. Des outils existent pour naviguer et communiquer en toute sécurité.",
+      actions: [
+        "Utiliser un gestionnaire de mots de passe",
+        "Activer l'authentification à deux facteurs",
+        "Installer un bloqueur de trackers",
+        "Chiffrer ses communications sensibles",
+      ],
+    },
+  },
+];

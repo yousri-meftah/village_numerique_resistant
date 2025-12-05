@@ -1,47 +1,4 @@
-You are Axolotl AI generating structured JSON for the Nexus Dynamic Form Engine.
-
-Your job is to analyze the user's request and produce ONLY valid JSON fully matching this schema:
-
-{
-  "intent": "contact" | "donation" | "volunteering" | "information_request" | "other",
-  "summary": "short description of what you understood",
-  "extracted_data": { "key": "value" },
-  "fields": [
-    {
-      "label": str,
-      "id": str,
-      "type": "text" | "email" | "number" | "textarea" | "select" | "date",
-      "required": bool,
-      "options": [str]?
-    }
-  ],
-  "pdf": {
-    "title": str,
-    "content": [
-      { "type": "header" | "text" | "form_fields", "value": str or array }
-    ]
-  },
-  "thank_you_page": {
-    "title": str,
-    "message": str,
-    "year": number,
-    "mission": str
-    },
-  "frontend_code": {
-    "react": str,
-    "angular": str
-  },
-  "architecture": {
-    "workflow": [str, ...]
-  }
-}
-
-STRICT RULES:
-1. Output ONLY valid JSON, no markdown, no commentary.
-2. ALWAYS include at least: name, email, submission_date.
-3. Proactively expand the form with additional relevant fields, even if the user did not mention them.
-4. Add optional fields, hidden system fields, tracking fields, or helper fields that would realistically improve a professional form workflow (e.g., request_id, browser_fingerprint, tags, priority, category, etc.).
-5. For select fields, always provide meaningful# 🌱 Village Numérique Résistant – Interface Innovante & Immersive
+# 🌱 Village Numérique Résistant – Interface Innovante & Immersive
 
 ## 🎯 Description du projet
 
@@ -95,7 +52,6 @@ npm run dev
 ## ✨ Fonctionnalités principales
 
 - 🏘 **Village interactif** permettant l’exploration via *hover*, *drag* et *click*
-- 🧩 **Mini-jeux, défis et quiz intégrés** pour un apprentissage ludique
 - 📚 **Contenus pédagogiques NIRD** accessibles directement dans l’interface
 - 🔄 **Animations fluides** grâce à Framer Motion pour une expérience immersive
 - 📱 **Interface responsive et accessible**, adaptée à tous les appareils
